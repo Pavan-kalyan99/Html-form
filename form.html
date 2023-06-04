@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box}
+        .container{
+            width: 700px;
+            height:600px;
+        }
+        form{
+            text-align: center;
+            background-color: aliceblue;
+            box-sizing: border-box;
+            width: 500px;
+            height:500px;
+            margin-top: 100px;
+            margin-left: 400px;
+          
+            
+            
+        }
+        .name{
+         
+            /* margin: 10px 10px;
+            padding: 10px 10px;
+            text-align: center; */
+            font-size: 40px;
+            margin: 10px 20px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+         
+        }
+        label{
+            justify-self: start;
+            /* float: left; */
+            padding: 15px;
+            margin: 0px;
+            font-size: 20px;
+            position: relative;
+            display: inline-block;
+            /* width:50px; */
+            /* height: 100px; */
+         
+         
+          
+        }
+   
+        input[type=text], input[type=email] ,input[type=number],input[type=date]{
+            background-color: rgb(177, 193, 193);
+            justify-self: start;
+            width:200px;
+            display: inline-block;
+            height: 30px;
+            margin-left: 150px;
+            padding: 20px;
+            position: absolute;
+            
+            /* left:50%; */
+            /* position: relative; */
+           
+         
+        }
+        button{
+            background-color: rgb(108, 142, 173);
+            size: 10px;
+            float:left;
+            width: 100px;
+            padding: 10px 20px;
+            margin-left: 50px;
+            color: aliceblue;
+            position: relative;
+        }
+        h1{
+            margin-left: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+
+        <form>
+            
+           <div> <h1> HTML form</h1></div>
+              
+                 <div class="name"><label for="fname">First name:</label>
+            <input type="text"  placeholder="Enter First Name"><br>
+            </div>
+            <div class="name"><label for="lname">Last name:</label>
+            <input type="text" placeholder="Enter Last name"><br>
+            </div>
+            <div class="name"><label >Date-of-Birth:</label>
+                <input type="date" class='col col-sm-5' placeholder="Enter DOB"><br>
+            </div>
+            <div class="name"><label >Email id:</label>
+                <input type="email"  placeholder="Enter email Id"><br>
+                </div>
+            <div class="name"><label >Number:</label>
+                <input type="text" placeholder="Enter Number ">
+                </div>
+            <button class="btn btn-primary">SUBMIT</button>
+            <button>RESET</button>
+    
+  
+          </form>
+    </div>
+    
+</body>
+</html>
